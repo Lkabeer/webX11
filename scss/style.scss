@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$fontX1: 'Open Sans', sans-serif;
+$fontX2: Georgia, 'Times New Roman', Times, serif;
+
+$colorX1: #464646;
+$colorX2: #fff;
+$colorX3: #e34879;
+$colorX4: #8cc63f;
+$colorX5: #9d9d9d;
+
+* {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+body {
+    font-family: $fontX1;
+
+    h1, h2 {
+        font-family: $fontX2;
+        font-style: italic;
+    }
+    
+    .container-fluid {
+        padding: 0 !important;
+    }
+
+    .faXlarge {
+        font-size: xx-large;
+    }    
+
+    .circleXbg {
+        border-radius: 50%;
+        padding: 50px;
+        background-color: $colorX3;
+        color: $colorX2;
+        font-size: x-large;
+    }
+
+    .btnX {
+        background-color: $colorX2;
+        color: $colorX4;
+        &:hover {
+            color: $colorX1;
+        }
+    }
+
+    #menuX {
+        font-family: $fontX1;
+        background-color: $colorX1;
+
+        a {
+            font-size: large;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $colorX2;
+
+            &:hover {
+                color: $colorX3;
+            }
+        }
+    }
+
+    .carousel {
+        .carousel-item {
+            height: 300px;
+            background: no-repeat center center scroll;
+            background-size: cover;
+        }
+
+        span {
+            background-image: none;
+            text-shadow: 2px 0px 2px $colorX1;
+            font-size: xx-large;
+        }
+
+        .carousel-indicators li {
+            cursor: pointer;
+            box-shadow: 2px 2px 2px $colorX1;
+        }
+    }
+    
+    .rowX1 {
+        background-color: $colorX3;
+        color: $colorX2;
+    }
+
+    .rowX2 {
+        background-color: $colorX4;
+        color: $colorX2;
+    }
+
+    footer {
+        .fa {
+            font-size: 20px;
+            line-height: 1em;
+            background-color: $colorX3;
+            padding: 10px 12px;
+            border-radius: 50%;
+            color: $colorX2;
+        }
+
+        .finePrintX {
+            color: $colorX5;
+            font-size: xx-small;
+            font-style: italic;
+        }
+        
+        .linkX {
+            color: $colorX3;
+            font-size: x-small;
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+}
